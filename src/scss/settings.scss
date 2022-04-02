@@ -1,0 +1,28 @@
+:root {
+  --background-color: #ffffff; /* white background */
+  --bg-main: hsl(180, 52%, 96%);
+  --bg-header: hsl(180, 29%, 50%);
+  --c-new: hsl(180, 29%, 50%);
+  --c-white: #fff;
+  --c-black: hsl(180, 14%, 20%);
+  --c-featured: hsl(180, 14%, 20%);
+  --c-info: hsl(180, 8%, 52%);
+  --bg-button: hsl(180, 52%, 96%);
+  --text-button: hsl(180, 29%, 50%);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #202c37;
+  }
+  :root {
+    --bg-header: #202c37;
+    --c-featured: #202c37;
+    --bg-main: #202c37;
+    --c-white: #2b3945;
+    --c-info: #bdbdbd;
+    --c-black: #fff;
+    --text-button: #2b3945;
+    --bg-button: hsl(180, 45%, 74%);
+  }
+}

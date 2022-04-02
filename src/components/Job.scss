@@ -1,0 +1,93 @@
+@import "@/scss/settings.scss";
+
+.job {
+  margin-bottom: 1.5rem;
+  padding: 1.4rem 1.8rem;
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  grid-template-columns: 6rem 1fr 1fr;
+  flex-wrap: wrap;
+  position: relative;
+
+  @media (max-width: 767.98px) {
+    grid-template-columns: 1fr;
+    margin-bottom: 5.5rem;
+    &.margin-top {
+      margin-top: 3rem;
+    }
+  }
+  &-new {
+    border-left: 0.313rem solid var(--c-new);
+  }
+  &-info {
+    color: var(--c-info);
+    @media (max-width: 767.98px) {
+      margin-top: 1rem;
+    }
+    &-name {
+      font-weight: 800;
+      color: var(--c-new);
+    }
+    &-is-new {
+      background-color: var(--c-new);
+    }
+    &-featured {
+      background-color: var(--c-featured);
+    }
+    &-is-new,
+    &-featured {
+      border-radius: 1rem;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 800;
+      height: 0.625rem;
+      padding: 0.5rem 0.625rem;
+      text-transform: uppercase;
+    }
+    &-position {
+      color: var(--c-black);
+      font-weight: 800;
+      &:hover {
+        color: var(--c-new);
+        cursor: pointer;
+      }
+    }
+    &-extra .dot {
+      display: block;
+      background-color: var(--c-info);
+      border-radius: 50%;
+      width: 0.25rem;
+      height: 0.25rem;
+    }
+  }
+
+  &-tools {
+    justify-content: end;
+    flex-wrap: wrap;
+    @media (max-width: 767.98px) {
+      justify-content: start;
+    }
+    button {
+      background-color: var(--bg-button);
+      color: var(--text-button);
+      font-weight: 600;
+      cursor: pointer;
+      padding: 0.5rem 0.625rem;
+      border-radius: 0.25rem;
+      outline: none;
+      border: 0px;
+      &:hover {
+        background-color: var(--c-new);
+        color: #fff;
+      }
+    }
+  }
+  &-image {
+    @media (max-width: 767.98px) {
+      position: absolute;
+      top: -3.8rem;
+      left: 2rem;
+    }
+  }
+}

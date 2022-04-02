@@ -1,0 +1,59 @@
+html,
+body,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@import "./settings.scss";
+
+main {
+  background-color: var(--bg-main);
+  font-family: "Spartan", sans-serif;
+  height: 100%;
+  min-height: 100vh;
+  font-size: 1rem;
+}
+.header {
+  background-color: var(--bg-header);
+  background-image: url("./images/bg-header-desktop.svg");
+  background-position: center;
+  min-height: 8rem;
+}
+
+.container {
+  background-color: var(--c-white);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 0.313rem;
+  padding: 1.4rem 1.8rem;
+  @media (max-width: 767.98px) {
+    margin: auto 1rem;
+  }
+}
+
+.d-flex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.mb {
+  margin-bottom: 0.625rem;
+}
+.mt {
+  margin-top: 0.625rem;
+}
