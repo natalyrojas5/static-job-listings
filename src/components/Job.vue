@@ -36,7 +36,7 @@ const containOption = (option: string) => {
     </div>
     <div class="job-info">
       <div class="d-flex mb">
-        <p class="job-info-name">{{ props.company }}</p>
+        <h1 class="job-info-name">{{ props.company }}</h1>
         <p v-if="props.new" class="job-info-is-new">New !</p>
         <p v-if="props.featured" class="job-info-featured">Featured</p>
       </div>
