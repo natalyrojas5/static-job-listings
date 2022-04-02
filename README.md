@@ -1,40 +1,33 @@
-# static-job-listings-master
+# STATIC JOB LISTINGS MASTER
 
-This template should help get you started developing with Vue 3 in Vite.
+## This project is based on one of the [Frontend Mentor](https://www.frontendmentor.io/) challenges.
 
-## Recommended IDE Setup
+![Static Job Listings Master Light](./screenshot.png)
+![Static Job Listings Master Dark](./screenshot-dark.png)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+### [Job listings with filtering](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt)
 
-## Type Support for `.vue` Imports in TS
+# Dark and Light mode
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+- Application changes dark or light mode depending on the mode your operating sistem is in.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+# Technologies used
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+- Vue + Pina + Ts
+- Sass
 
-## Customize configuration
+## Instalation
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- It is important to have installed node
 
-## Project Setup
+### Instalation modules
 
-```sh
-npm install
+```
+npm i
 ```
 
-### Compile and Hot-Reload for Development
+### Run application
 
-```sh
+```
 npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
 ```
