@@ -11,7 +11,7 @@ export const useJobsStore = defineStore('job', {
       if (job.level) job.languages.unshift(job.level)
       if (job.role) job.languages.unshift(job.role)
       if (job.tools) job.languages.push(...job.tools)
-      job.languages = [...new Set(job.languages)]
+      job.languages = Array.from(new Set(job.languages));
       return job
     }),
     hasOptionsFilter: (state) => {
