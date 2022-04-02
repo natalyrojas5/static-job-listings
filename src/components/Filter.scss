@@ -11,6 +11,7 @@
   &-options {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
     &-content {
       gap: 0;
       border-radius: 0.375rem;

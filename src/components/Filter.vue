@@ -26,7 +26,7 @@ const options = computed(() => store.currentOptionsFilter);
         </div>
       </div>
     </div>
-    <p class="btn-clear" @click="store.deleteOptions">Clear</p>
+    <p class="btn-clear" role="button" @click="store.deleteOptions">Clear</p>
   </div>
 </template>
 
