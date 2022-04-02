@@ -19,6 +19,11 @@ interface JobProps {
 const props = defineProps<JobProps>();
 const store = useJobsStore();
 const hasOptions = computed(() => store.hasOptionsFilter);
+const currentOptions = computed(() => store.currentOptionsFilter);
+
+const containOption = (option: string) => {
+  return currentOptions.value.some((item) => item === option);
+};
 </script>
 
 <template>
@@ -49,6 +54,7 @@ const hasOptions = computed(() => store.hasOptionsFilter);
         v-for="(tool, index) in props.languages"
         :key="index"
         @click="store.addOption(tool)"
+        :class="{ activated: containOption(tool) }"
       >
         {{ tool }}
       </button>

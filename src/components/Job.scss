@@ -77,7 +77,8 @@
       border-radius: 0.25rem;
       outline: none;
       border: 0px;
-      &:hover {
+      &:hover,
+      &.activated {
         background-color: var(--c-new);
         color: #fff;
       }
